@@ -1,38 +1,28 @@
-import React from "react";
-import "./App.css";
-import RealEstate from "./RealEstate";
+import React from 'react';
+import './App.css';
 
-// The main component for the website
-class App extends React.Component {
-  render() {
-    return (
-      <div className="App">
-        {/* The header of the website */}
-        <header className="App-header">
-          <h1>Portfolio Website</h1>
-        </header>
-        {/* The main content of the website */}
-        <main className="App-main">
-          {/* The GitHub section */}
-          <section className="GitHub-section">
-            <h2>GitHub</h2>
-            <p>
-              Check out my GitHub profile at{" "}
-              <a href="https://github.com/Tommybones2" target="_blank" rel="noopener noreferrer">
-                https://github.com/Tommybones2
-              </a>
-            </p>
-          </section>
-          {/* The Real Estate section */}
-          <section className="RealEstate-section">
-            <h2>Real Estate</h2>
-            <RealEstate />
-          </section>
-        </main>
-        {/* The footer of the website */}
-      </div>
-    );
-  }
+function App() {
+  return (
+    <div className="App">
+      <header className="App-header">
+        <div className="name-container">
+          <h1>Thomas Bonagura</h1>
+          <div className="links">
+            <a href="https://github.com/your-github-username" target="_blank" rel="noopener noreferrer">GitHub</a>
+          </div>
+        </div>
+      </header>
+      <main>
+        <nav>
+          <a href="/investments">Investments</a>
+          <a href="/about">About</a>
+        </nav>
+        <div className="homepage-content">
+          {/* add your homepage content here */}
+        </div>
+      </main>
+    </div>
+  );
 }
 
 export default App;
