@@ -1,0 +1,15 @@
+.about-page {
+    display: flex;
+}
+
+.about-me-section {
+    flex: 1;
+    padding: 20px;
+}
+
+.favorites-section {
+    flex: 1;
+    padding: 20px;
+}
+
+/* add additional styles as needed */
