@@ -1,29 +1,98 @@
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
 .App {
     font-family: sans-serif;
     text-align: center;
-    background: linear-gradient(to right, red, #ffa07a);
+    background: linear-gradient(to right, rgb(46, 227, 10), #b118bc);
+    background-size: 200% 200%;
+    animation: gradient 8s ease infinite;
 }
 
 .App-header {
-    background-color: #282c34;
+    background-color: #3261be;
     min-height: 100vh;
     display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     font-size: calc(10px + 2vmin);
     color: white;
 }
 
 .name-container {
+    position: relative;
     display: flex;
-    justify-content: space-between;
-    width: 80%;
-    max-width: 600px;
-    margin: 0 auto;
+    align-items: center;
+    color: rgb(9, 0, 0);
+    font-family: "Fantasy", Papyrus;
 }
 
-.links a {
+/*.name-container .orb {
+    position: absolute;
+    width: 100px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.5);
+    animation: float 3.5s ease-in-out infinite;
+}
+
+.name-container .orb:nth-of-type(1) {
+    top: 0;
+    left: 0;
+    animation-delay: 0s;
+}
+
+.name-container .orb:nth-of-type(2) {
+    top: 0;
+    right: 0;
+    animation-delay: 2.5s;
+}
+
+.name-container .orb:nth-of-type(3) {
+    bottom: 0;
+    right: 0;
+    animation-delay: 4s;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-40px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}*/
+
+.links-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-right: 10px;
+}
+
+.link-box {
+    background-color: lightblue;
+    padding: 10px;
+    margin: 5px 0;
+}
+
+.link-box a {
     color: white;
     text-decoration: none;
 }
@@ -48,5 +117,3 @@ nav a {
     max-width: 600px;
     margin: 0 auto;
 }
-
-/* add additional styles as needed */
